@@ -228,13 +228,11 @@ header {
 	.releaseImage {
 		position: absolute;
 		top: 330px;
-		margin-left: 540px;
+		left: 540px;
 	}
 
-	.postAuthor {
+	.topImage  {
 		position: absolute;
-	}
-
-	.postBody {
-		position: absolute;
+		top: 330px;
+		left: 40px;
 	}
