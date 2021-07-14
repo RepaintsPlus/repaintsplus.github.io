@@ -198,15 +198,10 @@ header {
 
 	.topText {
 		position: absolute;
-		top: 25px;
-		left: 75px;
-		margin-left: 15px;
-		font-size: 40px;
-		font-family: Arial, Helvetica, sans-serif;
-		text-align: center;
-		margin-top: 5px;
-		color: #ffffff;
-		font-variant: normal; 	
+		left: 65px;
+		top: 100px;
+		font-size: 30px;
+		color: #FFFFFF;
 	}
 
 	.bbTexts {
