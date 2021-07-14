@@ -172,11 +172,11 @@ header {
 							cursor: pointer;
 							letter-spacing: 0.5px;}
 
+
 	.bigBox {
-		position: absolute;
-		margin-left: 23%;
-		margin-right: 8.5%;
-		top: 395px;
+		position: relative;
+		margin: auto;
+		top: -60px;
 		height: 400px;
 		width: 1000px;
 		background-color: #47a6ff;
@@ -223,6 +223,10 @@ header {
 		margin-left: 540px;
 	}
 
-	.profileImage {
-		
+	.postAuthor {
+		position: absolute;
+	}
+
+	.postBody {
+		position: absolute;
 	}
