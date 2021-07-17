@@ -235,3 +235,10 @@ header {
 		top: 330px;
 		left: 40px;
 	}
+
+	.showcase {
+		position: absolute;
+		margin-top: 60;
+		margin-left: 400;
+		text-align: center;
+	}
