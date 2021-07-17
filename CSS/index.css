@@ -242,3 +242,8 @@ header {
 		margin-left: 400;
 		text-align: center;
 	}
+	
+	.copyright {
+		position: absolute;
+		
+	}
