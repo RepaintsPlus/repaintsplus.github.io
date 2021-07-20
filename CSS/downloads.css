@@ -91,3 +91,66 @@ header {
   .dropdown:hover .dropbtn {color: #E3AB62;
 							cursor: pointer;
 							letter-spacing: 0.5px;}
+
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 22%;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .description {
+	font-family: 'Montserrat', sans-serif;
+	color: #858585;
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: #000000;
+	white-space: pre-wrap;
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+    border-radius: 5px;
+    box-shadow: none;
+	background-color: #DCDCDC;
+    color: black;
+	border-color: black;
+    cursor: pointer;
+    padding: 8px 50px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 8px;
+	height: 35px;
+	width: 60%;
+	top: -48px;
+	text-transform: uppercase;
+	position: relative;
+	transition: ease .4s background-color, ease .4s color .4s
+}
+
+.productRow .productInfo .buyButton:hover {
+	background-color: grey;
+	color: white;
+	transition: ease .4s background-color, ease .4s color .4s
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 60%;
+}
