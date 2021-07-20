@@ -54,6 +54,15 @@ header {
 	font-weight: 400;
 }
 
+.dropbtn {
+	background-color: transparent;
+	color: #0080C9;
+	padding-left: 50px;
+	font-size: 14px;
+	border: none;
+	transition: 0.3s;
+  }
+
 .dropdown {
 	position: relative;
 	display: inline-block;
