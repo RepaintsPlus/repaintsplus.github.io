@@ -160,6 +160,17 @@ header {
 	white-space: pre-wrap;
 	text-align: center;
 }
+.productRow .productInfo .productPrice {
+	position: relative;
+	top: -45px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: #0080C9;
+	white-space: pre-wrap;
+	text-align: center;
+}
 /* Buy button for products in catalog */
 .productRow .productInfo .buyButton {
     border-radius: 5px;
