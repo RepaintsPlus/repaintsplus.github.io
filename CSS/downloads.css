@@ -102,7 +102,7 @@ header {
 	float: left;
 	padding-left: 5%;
 	padding-right: 5%;
-	width: 22%;
+	width: 20%;
 }
 /* Prices of a products in catalog */
 .productRow .productInfo .description {
@@ -111,6 +111,7 @@ header {
 	font-size: 22px;
 	position: relative;
 	top: -20px;
+	text-align: center;
 }
 /* Content holder for products in catalog*/
 .productRow .productInfo .productContent {
@@ -122,6 +123,7 @@ header {
 	font-weight: 200;
 	color: #000000;
 	white-space: pre-wrap;
+	text-align: center;
 }
 /* Buy button for products in catalog */
 .productRow .productInfo .buyButton {
@@ -138,11 +140,14 @@ header {
 	font-size: 14px;
 	margin-top: 8px;
 	height: 35px;
-	width: 60%;
+	width: 65%;
 	top: -48px;
 	text-transform: uppercase;
 	position: relative;
-	transition: ease .4s background-color, ease .4s color .4s
+	transition: ease .4s background-color, ease .4s color .4s;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .productRow .productInfo .buyButton:hover {
@@ -152,5 +157,13 @@ header {
 }
 /* Product's images in catalog */
 .productInfo div img {
-	width: 60%;
+	width: 65%;
+	height: auto;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
