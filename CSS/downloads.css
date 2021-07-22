@@ -54,6 +54,40 @@ header {
 	font-weight: 400;
 }
 
+.bottomHeaderImage {
+	margin-top: 0px;
+	background-color: #0080C9;
+	background-image: url(/images/Flught.png);
+	height: 215px;
+	width: 100%;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imageText {
+	position: absolute;
+	top: 75px;
+	right: 74%;
+	margin-left: 5px;
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	margin-top: 5px;
+	color: white;
+	font-variant: normal; 
+}
+
+.creditsText {
+	position: absolute;
+	top: 426px;
+	left: 5px;
+	margin-left: 5px;
+	font-size: 15px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
 .dropbtn {
 	background-color: transparent;
 	color: #0080C9;
@@ -100,6 +134,7 @@ header {
 /* Each product Information in the catalog */
 .mainContent .productRow .productInfo {
 	float: left;
+	padding-top: 3%;
 	padding-left: 5%;
 	padding-right: 5%;
 	width: 20%;
@@ -166,4 +201,5 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	height: 50%;
 }
