@@ -28,7 +28,7 @@
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 11px;
-	background-color: #ffffff;
+	background-color: #FFFFFF;
 	color: #0080C9;
 	text-decoration: none;
 }
@@ -41,7 +41,7 @@
 	text-align: right;
 }
 #headerLinks a:hover {
-	color: #E3AB62;
+	color: #E0C019;
 	cursor: pointer;
 	letter-spacing: 0.5px;
 }
