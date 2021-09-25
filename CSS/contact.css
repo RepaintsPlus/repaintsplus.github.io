@@ -152,3 +152,12 @@ header {
   .dropdown:hover .dropbtn {color: #E3AB62;
 							cursor: pointer;
 							letter-spacing: 0.5px;}
+
+	.footer {
+		position: absolute;
+		top: 405px;
+		height: 150px;
+		width: 100%;
+		background-color: #006CD1 ;
+		color: #006CD1;
+	}

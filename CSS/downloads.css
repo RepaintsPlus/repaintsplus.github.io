@@ -215,3 +215,12 @@ header {
 	width: 50%;
 	height: 50%;
 }
+
+.footer {
+	position: absolute;
+	top: 405px;
+	height: 150px;
+	width: 100%;
+	background-color: #006CD1 ;
+	color: #006CD1;
+}
