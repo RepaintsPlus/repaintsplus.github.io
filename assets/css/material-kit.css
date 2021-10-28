@@ -21684,7 +21684,7 @@ body.dark-version {
 .input-group.input-group-dynamic .form-control:focus,
 .input-group.input-group-static .form-control,
 .input-group.input-group-static .form-control:focus {
-  background-image: linear-gradient(0deg, #0080c9 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #0080c9 1px, rgba(209, 209, 209, 0) 0);
+  background-image: linear-gradient(0deg, #0080c9 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #6c757d 1px, rgba(209, 209, 209, 0) 0);
   border-radius: 0 !important;
 }
 
