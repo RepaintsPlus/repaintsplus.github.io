@@ -462,7 +462,7 @@ if(isset($_POST['submit'])){
                 <p class="pb-3">
                   Tickets submitted through this system are aimed to be answered within 48 hours of initial sending, but can be up to 96 hours.
                 </p>
-                <form id="contact-form" method="post" autocomplete="off" action="../assets/php/form.php">
+                <form id="contact-form" method="post" autocomplete="off" action="submit">
                   <div class="card-body p-0 my-3">
                     <div class="row">
                       <div class="col-md-6">
