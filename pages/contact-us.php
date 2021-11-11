@@ -1,5 +1,5 @@
-<?php 
-if(isset($_POST['submit'])){
+<?php //(isset($_POST['submit']) 
+if(isset($_POST['../assets/php/form.php'])){
     $to = "repaintsplus@outlook.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['name'];
