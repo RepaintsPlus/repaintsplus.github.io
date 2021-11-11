@@ -1,22 +1,3 @@
-<?php //(isset($_POST['submit']) 
-if(isset($_POST['../assets/php/form.php'])){
-    $to = "repaintsplus@outlook.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
-
 <!--
 =========================================================
 * Material Kit 2 - v3.0.0
@@ -29,6 +10,25 @@ if(isset($_POST['../assets/php/form.php'])){
  =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+<?php 
+if(isset($_POST['submit'])){
+    $to = "email@example.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
@@ -461,31 +461,31 @@ if(isset($_POST['../assets/php/form.php'])){
                 <p class="pb-3">
                   Tickets submitted through this system are aimed to be answered within 48 hours of initial sending, but can be up to 96 hours.
                 </p>
-                <form id="contact-form" method="post" autocomplete="off" action="submit">
+                <form id="contact-form" method="post" autocomplete="off" action="">
                   <div class="card-body p-0 my-3">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="input-group input-group-static mb-4">
                           <label>Full Name</label>
-                          <input type="name" class="form-control" placeholder="Full Name" name="name">
+                          <input type="text" class="form-control" placeholder="Full Name" name="first_name"><br>
                         </div>
                       </div>
                       <div class="col-md-6 ps-md-2">
                         <div class="input-group input-group-static mb-4">
                           <label>Email</label>
-                          <input type="email" class="form-control" placeholder="Your Email Address" name="email">
+                          <input type="text" class="form-control" placeholder="Your Email Address" name="email"><br>
                         </div>
                       </div>
                     </div>
                     <div class="form-group mb-0 mt-md-0 mt-4">
                       <div class="input-group input-group-static mb-4">
                         <label>How can we help you?</label>
-                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Describe your enquiry with detail."></textarea>
+                        <br><textarea name="message" class="form-control" id="message" rows="6" placeholder="Describe your enquiry with detail."></textarea><br>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-12 text-center">
-                        <button type="submit" class="btn bg-gradient-primary mt-3 mb-0">Send Message</button>
+                        <button type="submit" name="submit" value="Submit" class="btn bg-gradient-primary mt-3 mb-0">Send Message</button>
                       </div>
                     </div>
                   </div>
