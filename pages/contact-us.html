@@ -11,7 +11,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
-<?php 
+<!-- <?php 
 if(isset($_POST['submit'])){
     $to = "repaintsplus@outlook.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";}
-?>
+?> -->
 
 
 <!DOCTYPE html>
@@ -95,7 +95,7 @@ if(isset($_POST['submit'])){
         <a href="../pages/author.html" class="dropdown-item border-radius-md">
           <span>Our Team</span>
         </a>
-        <a href="../pages/contact-us.html" class="dropdown-item border-radius-md">
+        <a href="../pages/contact-us.php" class="dropdown-item border-radius-md">
           <span>Contact Us</span>
         </a>
         <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
