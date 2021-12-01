@@ -1,4 +1,4 @@
-<!--
+  <!--
 =========================================================
 * Material Kit 2 - v3.0.0
 =========================================================
@@ -10,23 +10,6 @@
  =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
-<!-- <?php 
-if(isset($_POST['submit'])){
-    $to = "repaintsplus@outlook.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";}
-?> -->
 
 
 <!DOCTYPE html>
@@ -43,7 +26,7 @@ if(isset($_POST['submit'])){
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
-    RepaintsPlus - Contact Us
+    RepaintsPlus - Privacy Policy
   </title>
     <!--     Fonts and icons     -->
     <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" /> -->
@@ -440,63 +423,38 @@ if(isset($_POST['submit'])){
     </div>
   </div>
 </div>
-
-
-  <!-- -------- START HEADER 8 w/ card over right bg image ------- -->
-  <section>
-    <div class="page-header min-vh-100">
+  
+<!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+<header>
+    <div class="page-header min-height-400" style="background-image: url('../assets/img/city-profile.jpg');" loading="lazy">
+      <span class="mask bg-gradient-dark opacity-8"></span>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+    <!-- START Testimonials w/ user image & text & info -->
+    <section class="py-sm-7 py-5 position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
-            <div class="position-relative h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('../assets/img/nzair787.png'); background-size: cover;" loading="lazy"></div>
-          </div>
-          <div class="col-xl-5 col-lg-6 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
-            <div class="card d-flex blur justify-content-center shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
-              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                <div class="bg-gradient-primary shadow-primary border-radius-lg p-3">
-                  <h3 class="text-white text-primary mb-0">Contact us</h3>
+          <div class="col-12 mx-auto">
+            <div class="mt-n8 mt-md-n9 text-center">
+              <img class="avatar avatar-xxl shadow-xl position-relative z-index-2" src="https://lh3.googleusercontent.com/ogw/ADea4I5Fhj57Bfv-BP-BjEUbU-CGC8FA2EkEDMbsegbt=s256-c-mo" alt="bruce" loading="lazy">
+            </div>
+            <div class="row py-5">
+              <div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mx-auto">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="mb-0">Privacy Policy</h3>
                 </div>
-              </div>
-              <div class="card-body">
-                <p class="pb-3">
-                  Tickets submitted through this system are aimed to be answered within 48 hours of initial sending, but can be up to 96 hours.
+                <iframe src="https://drive.google.com/file/d/1IOMp15GEyyjQ4LCQLpOPVSm1vsMhbn_t/preview" width="100%" height="85%" allow="autoplay"></iframe>
                 </p>
-                <form id="contact-form" method="post" autocomplete="off" action="./contact-us.php">
-                  <div class="card-body p-0 my-3">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="input-group input-group-static mb-4">
-                          <label>Full Name</label>
-                          <input type="text" class="form-control" placeholder="Full Name" name="first_name"><br>
-                        </div>
-                      </div>
-                      <div class="col-md-6 ps-md-2">
-                        <div class="input-group input-group-static mb-4">
-                          <label>Email</label>
-                          <input type="text" class="form-control" placeholder="Your Email Address" name="email"><br>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group mb-0 mt-md-0 mt-4">
-                      <div class="input-group input-group-static mb-4">
-                        <label>How can we help you?</label>
-                        <br><textarea name="message" class="form-control" id="message" rows="6" placeholder="Describe your enquiry with detail."></textarea><br>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12 text-center">
-                        <button type="submit" name="submit" value="Submit" class="btn bg-gradient-primary mt-3 mb-0">Send Message</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- END Testimonials w/ user image & text & info -->
+  
   <!-- -------- END HEADER 8 w/ card over right bg image ------- -->
   <footer class="footer pt-5 mt-5">
     <div class="container">
