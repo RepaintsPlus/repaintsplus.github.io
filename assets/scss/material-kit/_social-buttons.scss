@@ -1,42 +1,28 @@
-.btn {
-  // social buttons
-  &.btn-facebook {
-    @include social-buttons-color($facebook, $facebook-states);
-  }
-  &.btn-twitter {
-    @include social-buttons-color($twitter, $twitter-states);
-  }
-  &.btn-pinterest {
-    @include social-buttons-color($pinterest, $pinterest-states);
-  }
-  &.btn-linkedin {
-    @include social-buttons-color($linkedin, $linkedin-states);
-  }
-  &.btn-dribbble {
-    @include social-buttons-color($dribbble, $dribbble-states);
-  }
-  &.btn-github {
-    @include social-buttons-color($github, $github-states);
-  }
-  &.btn-youtube {
-    @include social-buttons-color($youtube, $youtube-states);
-  }
-  &.btn-instagram {
-    @include social-buttons-color($instagram, $instagram-states);
-  }
-  &.btn-reddit {
-    @include social-buttons-color($reddit, $reddit-states);
-  }
-  &.btn-tumblr {
-    @include social-buttons-color($tumblr, $tumblr-states);
-  }
-  &.btn-behance {
-    @include social-buttons-color($behance, $behance-states);
-  }
-  &.btn-vimeo {
-    @include social-buttons-color($vimeo, $vimeo-states);
-  }
-  &.btn-slack {
-    @include social-buttons-color($slack, $slack-states);
-  }
-}
+// Social Buttons
+
+$facebook:              #3b5998 !default;
+$facebook-states:       darken($facebook, 5%) !default;
+$twitter:               #55acee !default;
+$twitter-states:        darken($twitter, 5%) !default;
+$instagram:             #125688 !default;
+$instagram-states:      darken($instagram, 6%) !default;
+$linkedin:              #0077B5 !default;
+$linkedin-states:       darken($linkedin, 5%) !default;
+$pinterest:             #cc2127 !default;
+$pinterest-states:      darken($pinterest, 6%) !default;
+$youtube:               #e52d27 !default;
+$youtube-states:        darken($youtube, 6%) !default;
+$dribbble:              #ea4c89 !default;
+$dribbble-states:       darken($dribbble, 6%) !default;
+$github:                #24292E !default;
+$github-states:         darken($github, 6%) !default;
+$reddit:                #ff4500 !default;
+$reddit-states:         darken($reddit, 6%) !default;
+$tumblr:                #35465c !default;
+$tumblr-states:         darken($tumblr, 6%) !default;
+$behance:               #1769ff !default;
+$behance-states:        darken($behance, 6%) !default;
+$vimeo:                 #1AB7EA !default;
+$vimeo-states:          darken($vimeo, 6%) !default;
+$slack:                 #3aaf85 !default;
+$slack-states:          darken($slack, 6%) !default;

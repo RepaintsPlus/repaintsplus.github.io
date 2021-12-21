@@ -1,123 +1,139 @@
+// Base class
+//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s, `<ul>`s or `<ol>`s.
+
 .nav {
-  &.nav-pills {
-    background: $nav-pills-background;
-    border-radius: $nav-pills-border-radius;
-    position: relative;
-    &.nav-pills-vertical {
-      border-radius: $nav-pills-vertical-radius;
-      .nav-link {
-        &.active {
-          border-radius: $nav-pills-vertical-link-radius;
-        }
-      }
-    }
-    .nav-link {
-      z-index: 3;
-      color: $dark;
-      border-radius: $nav-pills-link-border-radius;
-      background-color: inherit;
-      &.active {
-        animation: $nav-pills-link-active-animation;
-      }
-      &:hover:not(.active) {
-        color: $dark;
-      }
-    }
-    &.nav-pills-primary {
-      background: $white;
-      color: $white;
-      .nav-link{
-        &.active{
-          color: $white;
-        }
-      }
-      .moving-tab {
-        .nav-link.active {
-          background: $primary-gradient;
-          color: $primary-gradient;
-        }
-      }
-    }
-    &.nav-pills-info {
-      background: $white;
-      color: $white;
-      .nav-link{
-        &.active{
-          color: $white;
-        }
-      }
-      .moving-tab {
-        .nav-link.active {
-          background: $info-gradient;
-          color: $info-gradient;
-        }
-      }
-    }
-    &.nav-pills-success {
-      background: $white;
-      color: $white;
-      .nav-link{
-        &.active{
-          color: $white;
-        }
-      }
-      .moving-tab {
-        .nav-link.active {
-          background: $success-gradient;
-          color: $success-gradient;
-        }
-      }
-    }
-    &.nav-pills-warning {
-      background: $white;
-      color: $white;
-      .nav-link{
-        &.active{
-          color: $white;
-        }
-      }
-      .moving-tab {
-        .nav-link.active {
-          background: $warning-gradient;
-          color: $warning-gradient;
-        }
-      }
-    }
-    &.nav-pills-danger {
-      background: $white;
-      color: $white;
-      .nav-link{
-        &.active{
-          color: $white;
-        }
-      }
-      .moving-tab {
-        .nav-link.active {
-          background: $danger-gradient;
-          color: $danger-gradient;
-        }
-      }
-    }
-    .nav-item{
-      z-index: 3;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: $nav-link-padding-y $nav-link-padding-x;
+  @include font-size($nav-link-font-size);
+  font-weight: $nav-link-font-weight;
+  color: $nav-link-color;
+  text-decoration: if($link-decoration == none, null, none);
+  @include transition($nav-link-transition);
+
+  &:hover,
+  &:focus {
+    color: $nav-link-hover-color;
+    text-decoration: if($link-hover-decoration == underline, none, null);
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-link-disabled-color;
+    pointer-events: none;
+    cursor: default;
   }
 }
-.moving-tab {
-  z-index: 1 !important;
+
+//
+// Tabs
+//
+
+.nav-tabs {
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+
   .nav-link {
-    color: $white;
-    transition: .2s ease;
-    border-radius: $nav-pills-link-border-radius;
-    &.active {
-      color: $white;
-      font-weight: $font-weight-bold;
-      box-shadow: $nav-pills-link-box-shadow;
-      animation: $nav-pills-link-active-animation;
-      background: $white;
+    margin-bottom: -$nav-tabs-border-width;
+    background: none;
+    border: $nav-tabs-border-width solid transparent;
+    @include border-top-radius($nav-tabs-border-radius);
+
+    &:hover,
+    &:focus {
+      border-color: $nav-tabs-link-hover-border-color;
+      // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
+      isolation: isolate;
     }
-    &:hover:not(.active) {
-      color: $dark;
+
+    &.disabled {
+      color: $nav-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
     }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $nav-tabs-link-active-color;
+    background-color: $nav-tabs-link-active-bg;
+    border-color: $nav-tabs-link-active-border-color;
+  }
+
+  .dropdown-menu {
+    // Make dropdown border overlap tab border
+    margin-top: -$nav-tabs-border-width;
+    // Remove the top rounded corners here since there is a hard edge above the menu
+    @include border-top-radius(0);
+  }
+}
+
+
+//
+// Pills
+//
+
+.nav-pills {
+  .nav-link {
+    background: none;
+    border: 0;
+    @include border-radius($nav-pills-border-radius);
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    color: $nav-pills-link-active-color;
+    @include gradient-bg($nav-pills-link-active-bg);
+  }
+}
+
+
+//
+// Justified variants
+//
+
+.nav-fill {
+  > .nav-link,
+  .nav-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+.nav-justified {
+  > .nav-link,
+  .nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+.nav-fill,
+.nav-justified {
+  .nav-item .nav-link {
+    width: 100%; // Make sure button will grow
+  }
+}
+
+
+// Tabbable tabs
+//
+// Hide tabbable panes to start, show them when `.active`
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
   }
 }

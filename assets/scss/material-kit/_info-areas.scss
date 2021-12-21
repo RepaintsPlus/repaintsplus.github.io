@@ -1,178 +1,32 @@
-.icon-shape {
-  width: $icon-md-width;
-  height: $icon-md-width;
-  background-position: $icon-shape-bg-position;
-  border-radius: $border-radius-lg;
+$icon-shape-bg-image:               linear-gradient(195deg,#7928CA,#FF0080) !default;
+$icon-shape-bg-position:            center !default;
 
-  i {
-    color: $white;
-    opacity: $icon-shape-icon-opacity;
-    top: $info-icon-top;
-    position: $info-icon-position;
-  }
+$icon-striped-bg-md:                85px !default;
+$icon-striped-bg-lg:                111px !default;
+$icon-striped-bg-xl:                80px !default;
 
-  .ni {
-    top: 14px;
-  }
-}
+$icon-striped-icon-mt:              25% !default;
+$icon-striped-icon-ml:              -24% !default;
 
-.icon-xxs {
-  width: $icon-xxs-width;
-  height: $icon-xxs-height;
+$icon-shape-icon-opacity:           .8 !default;
+$info-icon-top:                     11px !default;
+$info-icon-top-xxs:                 -4px !default;
+$info-icon-top-xs:                  -1px !default;
+$info-icon-top-sm:                  4px !default;
+$info-icon-top-md:                  30% !default;
+$info-icon-top-lg:                  31% !default;
+$info-icon-top-xl:                  35% !default;
+$info-icon-position:                relative !default;
 
-  i {
-    top: $info-icon-top-xxs;
-    font-size: $font-size-xxs;
-  }
-}
-
-.icon-xs {
-  width: $icon-xs-width;
-  height: $icon-xs-height;
-
-  i {
-    top: $info-icon-top-xs;
-    font-size: $font-size-xs;
-  }
-}
-
-.icon-sm {
-  width: $icon-sm-width;
-  height: $icon-sm-height;
-
-  i {
-    top: $info-icon-top-sm;
-    font-size: $font-size-sm;
-  }
-}
-
-.icon-md {
-  width: $icon-md-width;
-  height: $icon-md-height;
-
-  i {
-    top: $info-icon-top-md;
-    font-size: $font-size-lg;
-  }
-
-  &.icon-striped {
-    background-position-x: $icon-striped-bg-md;
-    background-position-y: $icon-striped-bg-md;
-
-    i {
-      top: 11%;
-      margin-left: -10px;
-      font-size: $font-size-sm;
-    }
-  }
-}
-
-.icon-lg {
-  width: $icon-lg-width;
-  height: $icon-lg-height;
-  i {
-    top: $info-icon-top-lg;
-    font-size: $font-size-2xl;
-  }
-
-  &.icon-striped {
-    background-position-x: $icon-striped-bg-lg;
-    background-position-y: $icon-striped-bg-lg;
-
-    i {
-      top: 21%;
-      margin-left: -15px;
-    }
-  }
-}
-
-.icon-xl {
-  width: $icon-xl-width;
-  height: $icon-xl-height;
-  border-radius: $border-radius-lg;
-
-  i {
-    top: $info-icon-top-xl;
-    font-size: 2.1rem;
-  }
-
-  &.icon-striped {
-    background-position-x: $icon-striped-bg-xl;
-    background-position-y: $icon-striped-bg-xl;
-
-    i {
-      top: 30%;
-      margin-left: -15px;
-    }
-  }
-}
-
-.info-horizontal {
-  text-align: left !important;
-
-  .icon {
-    float: left;
-  }
-  .description {
-    overflow: hidden;
-  }
-}
-
-// Icon SVG fill color change
-
-svg.text-primary {
-  .color-foreground {
-    fill: $primary-gradient;
-  }
-  .color-background {
-    fill: $primary-gradient-state;
-  }
-}
-svg.text-secondary {
-  .color-foreground {
-    fill: $secondary-gradient;
-  }
-  .color-background {
-    fill: $secondary-gradient-state;
-  }
-}
-svg.text-info {
-  .color-foreground {
-    fill: $info-gradient;
-  }
-  .color-background {
-    fill: $info-gradient-state;
-  }
-}
-svg.text-warning {
-  .color-foreground {
-    fill: $warning-gradient;
-  }
-  .color-background {
-    fill: $warning-gradient-state;
-  }
-}
-svg.text-danger {
-  .color-foreground {
-    fill: $danger-gradient;
-  }
-  .color-background {
-    fill: $danger-gradient-state;
-  }
-}
-svg.text-success {
-  .color-foreground {
-    fill: $success-gradient;
-  }
-  .color-background {
-    fill: $success-gradient-state;
-  }
-}
-svg.text-dark {
-  .color-foreground {
-    fill: $dark-gradient;
-  }
-  .color-background {
-    fill: $dark-gradient-state;
-  }
-}
+$icon-xxs-width:                    20px !default;
+$icon-xxs-height:                   $icon-xxs-width !default;
+$icon-xs-width:                     24px !default;
+$icon-xs-height:                    $icon-xs-width !default;
+$icon-sm-width:                     32px !default;
+$icon-sm-height:                    $icon-sm-width !default;
+$icon-md-width:                     48px !default;
+$icon-md-height:                    $icon-md-width !default;
+$icon-lg-width:                     64px !default;
+$icon-lg-height:                    $icon-lg-width !default;
+$icon-xl-width:                     100px !default;
+$icon-xl-height:                    $icon-xl-width !default;
