@@ -11,7 +11,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 
-<!-- <?php 
+<?php 
 if(isset($_POST['submit'])){
     $to = "repaintsplus@outlook.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";}
-?> -->
+?>
 
 
 <!DOCTYPE html>
@@ -464,7 +464,7 @@ if(isset($_POST['submit'])){
                 <p class="pb-3">
                   Tickets submitted through this system are aimed to be answered within 48 hours of initial sending, but can be up to 96 hours.
                 </p>
-                <form id="contact-form" method="post" autocomplete="off" action="./contact-us.php">
+                <form id="contact-form" method="post" autocomplete="off" action="submit">
                   <div class="card-body p-0 my-3">
                     <div class="row">
                       <div class="col-md-6">
